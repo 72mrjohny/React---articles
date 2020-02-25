@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+li {
+  display: inline-block;
+  max-width: 25%;
+  margin: 30px;
+}
+img {
+  width: 200px;
+  height: 100px;
+}
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+}
