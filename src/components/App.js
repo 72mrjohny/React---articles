@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-// import ArticleCard from './ArticleCard';
+
 import ArticlesList from './ArticlesList';
+// import Test from './Test';
 
 
 const API = 'http://newsapi.org/v2/top-headlines?country=pl&apiKey=839d8c1928bd403cad816ed242527e48';
@@ -35,11 +36,14 @@ class App extends Component {
 
   }
 
+
+
   render() {
     let articles = this.state.articles;
     return (
       <div>
         <h1>Lista artykułów</h1>
+        {/* <Test /> */}
 
         <button onClick={this.getArticles}> Pobierz</button>
         <ArticlesList articles={articles} />

@@ -6,14 +6,14 @@ const ArticlesList = props => {
 
     let articles = props.articles.map(article => (
 
-        <ArticleCard title={article.title} url={article.urlToImage} />
+        <ArticleCard key={article.id} title={article.title} url={article.urlToImage} href={article.url} />
 
 
     ))
     return (
-        <ul>
+        <div className="list-wrapper">
             {articles}
-        </ul>
+        </div>
     );
 }
 export default ArticlesList;
